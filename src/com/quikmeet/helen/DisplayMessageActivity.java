@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.NavUtils;
@@ -26,7 +27,7 @@ public class DisplayMessageActivity extends Activity {
 	    TextView textView = new TextView(this);
 	    textView.setTextSize(40);
 	    textView.setText(message);
-
+	    textView.setTextColor(getResources().getColor(R.color.text_color));
 	    // Set the text view as the activity layout
 	    setContentView(textView);
 	}
